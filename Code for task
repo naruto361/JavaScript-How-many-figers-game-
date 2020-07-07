@@ -1,0 +1,27 @@
+
+<html>
+	<head>
+		<title>
+			finger game
+		</title>
+	</head>
+	<body>
+	<p>
+	How many fingers am i holding up?</p>
+	<input id="typehere" type="text" placeholder="guess here">
+	<button id="enter">Guess!</button>
+		<script>
+		document.getElementById("enter").onclick= function(){
+		var x=document.getElementById("typehere").value;
+		var y=Math.floor(5*Math.random())+1
+		if(x==y)
+		alert(" Congratulations correct!");
+		else
+		alert("incorrect ,the correct number was :" +y);
+		}
+		
+		
+		</script>
+	</body>
+	
+</html>
